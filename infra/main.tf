@@ -39,7 +39,7 @@ module "production" {
   static_env    = merge(var.static_env, var.production.static_env)
   log_host_base = var.log_host_base
   # enable_basic_auth defaults false — no .htpasswd mount; the prod host isn't in the image's auth gate, so the storefront is open
-  rabbitmq_mgmt_port = 25672
+  rabbitmq_mgmt_port = 25673
   s3                 = var.production.s3
   mailer_dsn         = var.secrets_production.mailer_dsn # production: real SMTP (secret)
   secrets            = var.secrets_production

@@ -12,30 +12,29 @@ services:
                     secret: '%env(S3_SECRET_ACCESS_KEY)%'
 
 flysystem:
-    adapters:
-        opendxp_s3_public_adapter:
-            aws_s3:
+    storages:
+        opendxp.asset.storage:
+            adapter: aws_s3
+            visibility: public
+            public_url: '%env(S3_CDN_DOMAIN)%'
+            options:
                 client: 'app.s3_client'
                 bucket: '%env(S3_BUCKET_PUBLIC)%'
                 prefix: '%env(S3_ROOT_PREFIX)%public'
 
-        opendxp_s3_private_adapter:
-            aws_s3:
+        opendxp.thumbnail.storage:
+            adapter: aws_s3
+            visibility: public
+            public_url: '%env(S3_CDN_DOMAIN)%'
+            options:
+                client: 'app.s3_client'
+                bucket: '%env(S3_BUCKET_PUBLIC)%'
+                prefix: '%env(S3_ROOT_PREFIX)%public'
+
+        opendxp.version.storage:
+            adapter: aws_s3
+            visibility: private
+            options:
                 client: 'app.s3_client'
                 bucket: '%env(S3_BUCKET_PRIVATE)%'
                 prefix: '%env(S3_ROOT_PREFIX)%private'
-
-    storages:
-        opendxp.asset.storage:
-            adapter: 'opendxp_s3_public_adapter'
-            visibility: public
-            public_url: '%env(S3_CDN_DOMAIN)%'
-
-        opendxp.thumbnail.storage:
-            adapter: 'opendxp_s3_public_adapter'
-            visibility: public
-            public_url: '%env(S3_CDN_DOMAIN)%'
-
-        opendxp.version.storage:
-            adapter: 'opendxp_s3_private_adapter'
-            visibility: private

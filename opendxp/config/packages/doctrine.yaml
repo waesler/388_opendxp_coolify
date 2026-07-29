@@ -4,3 +4,6 @@ doctrine:
             default:
                 url: '%env(resolve:DATABASE_URL)%'
                 server_version: '%env(string:default:default_database_server_version:DATABASE_SERVER_VERSION)%'
+                mapping_types:
+                    enum: string
+                    bit: boolean

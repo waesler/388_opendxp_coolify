@@ -25,8 +25,47 @@ if [ -n "$DATABASE_URL" ]; then
         }
         exit(1);
     "; then
-        echo "Database is online! Ensuring bundles are installed..."
+        echo "Database is online! Parsing credentials..."
         
+        # Parse DATABASE_URL into components
+        DB_URL_PART=$(echo "$DATABASE_URL" | sed 's|mysql://||')
+        DB_CREDS=$(echo "$DB_URL_PART" | cut -d'@' -f1)
+        DB_CONN=$(echo "$DB_URL_PART" | cut -d'@' -f2 | cut -d'/' -f1)
+        DB_USER=$(echo "$DB_CREDS" | cut -d':' -f1)
+        DB_PASS=$(echo "$DB_CREDS" | cut -d':' -f2)
+        DB_HOST=$(echo "$DB_CONN" | cut -d':' -f1)
+        DB_PORT=$(echo "$DB_CONN" | cut -d':' -f2)
+        DB_NAME=$(echo "$DB_URL_PART" | cut -d'/' -f2 | cut -d'?' -f1)
+        DB_PORT=${DB_PORT:-3306}
+        
+        # Check if the database has tables (meaning it's already installed)
+        TABLE_COUNT=$(php -r "
+            try {
+                \$pdo = new PDO('mysql:host=' . '$DB_HOST' . ';port=' . '$DB_PORT' . ';dbname=' . '$DB_NAME', '$DB_USER', '$DB_PASS');
+                \$stmt = \$pdo->query(\"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = '\$DB_NAME'\");
+                echo (int) \$stmt->fetchColumn();
+            } catch (Exception \$e) {
+                echo 0;
+            }
+        ")
+        
+        if [ "${TABLE_COUNT:-0}" -eq 0 ]; then
+            echo "Database is empty! Running OpenDXP core installation..."
+            vendor/bin/opendxp-install \
+                --admin-username=admin \
+                --admin-password=admin \
+                --mysql-host-socket="$DB_HOST" \
+                --mysql-username="$DB_USER" \
+                --mysql-password="$DB_PASS" \
+                --mysql-database="$DB_NAME" \
+                --mysql-port="$DB_PORT" \
+                --skip-database-config \
+                --no-interaction
+        else
+            echo "Database is already initialized ($TABLE_COUNT tables found)."
+        fi
+        
+        echo "Ensuring bundles are installed..."
         # Run bundle installs automatically
         for bundle in OpenDxpSeoBundle \
                       OpenDxpApplicationLoggerBundle \

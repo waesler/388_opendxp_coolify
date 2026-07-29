@@ -14,7 +14,7 @@ services:
 flysystem:
     storages:
         opendxp.asset.storage:
-            adapter: aws_s3
+            adapter: aws
             visibility: public
             public_url: '%env(S3_CDN_DOMAIN)%'
             options:
@@ -23,7 +23,7 @@ flysystem:
                 prefix: '%env(S3_ROOT_PREFIX)%public'
 
         opendxp.thumbnail.storage:
-            adapter: aws_s3
+            adapter: aws
             visibility: public
             public_url: '%env(S3_CDN_DOMAIN)%'
             options:
@@ -32,7 +32,7 @@ flysystem:
                 prefix: '%env(S3_ROOT_PREFIX)%public'
 
         opendxp.version.storage:
-            adapter: aws_s3
+            adapter: aws
             visibility: private
             options:
                 client: 'app.s3_client'

@@ -1,6 +1,6 @@
 # Staging environment settings (non-secret). Secrets live in secrets.auto.tfvars.
 staging = {
-  web_image         = "ghcr.io/vanwittlaer/opendxp/stage"
+  web_image         = "ghcr.io/waesler/388_opendxp_coolify/opendxp"
   web_image_tag     = "latest"
   web_domain        = "https://opendxp-staging.my-demo.shop"
   app_env           = "stage"

@@ -3,7 +3,7 @@ project_name = "OpenDXP"
 
 # Production environment settings (non-secret). Secrets live in secrets.auto.tfvars.
 production = {
-  web_image         = "ghcr.io/vanwittlaer/opendxp/prod"
+  web_image         = "ghcr.io/waesler/388_opendxp_coolify/opendxp"
   web_image_tag     = "latest"
   web_domain        = "https://opendxp.my-demo.shop"
   app_env           = "prod"

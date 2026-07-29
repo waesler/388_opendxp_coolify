@@ -1,0 +1,3 @@
+hooks:
+    post-import-db:
+        -   exec: php bin/console cache:clear

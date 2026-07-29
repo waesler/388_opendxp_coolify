@@ -1,4 +1,4 @@
-FROM open-dxp/opendxp:php8.3-latest
+FROM opendxp/opendxp:php8.3-latest
 
 WORKDIR /var/www/html
 

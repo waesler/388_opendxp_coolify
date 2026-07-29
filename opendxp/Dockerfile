@@ -8,5 +8,5 @@ COPY --chown=www-data:www-data . .
 # Install dependencies using Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
 
-# Ensure permissions are correct
-RUN chmod -R 775 var public/var
+# Ensure permissions and directories are correct
+RUN mkdir -p var public/var && chown -R www-data:www-data var public/var && chmod -R 775 var public/var

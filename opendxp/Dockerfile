@@ -8,9 +8,11 @@ RUN apt-get update && apt-get install -y nginx supervisor && rm -rf /var/lib/apt
 # Copy application files
 COPY --chown=www-data:www-data . .
 
-# Configure Nginx and Supervisor
+# Configure Nginx, Supervisor, and Entrypoint script
 COPY .docker/nginx-prod.conf /etc/nginx/sites-available/default
 COPY .docker/supervisord-prod.conf /etc/supervisor/conf.d/supervisord.conf
+COPY .docker/entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 # Install dependencies using Composer
 RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
@@ -20,4 +22,4 @@ RUN mkdir -p var public/var && chown -R www-data:www-data var public/var && chmo
 
 EXPOSE 8000
 
-CMD ["supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
+ENTRYPOINT ["/entrypoint.sh"]

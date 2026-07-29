@@ -45,3 +45,16 @@
   4. Runs `cache:clear`.
   5. Boots `supervisord` to serve the application.
 
+### 7. Standalone Repository Split (OpenDXP)
+- **Problem**: Need to split the combined Shopware & OpenDXP repository into two separate standalone repositories.
+- **Solution**: Created a fully scaffolded standalone OpenDXP repository export at `/home/luis/opendxp_export/` with the application code and OpenTofu infrastructure moved directly to the root directory, alongside an updated `.github/workflows/opendxp-ci-cd.yml` workflow configured to build directly from the root context.
+
+### 8. Flysystem S3 Storage Integration & Build Fixes
+- **Problem**: Uploaded files and media assets were saved to container ephemeral storage, resulting in data loss on container redeploys.
+- **Solution**:
+  - Installed `league/flysystem-aws-s3-v3` library in the OpenDXP composer file.
+  - Added [opendxp/config/packages/prod/flysystem.yaml](file:///home/luis/swoofy/opendxp/config/packages/prod/flysystem.yaml) to map public assets, thumbnails, and private versions directly to the Hetzner S3 bucket using the `aws` adapter.
+  - Appended default dummy values for `DATABASE_URL` and S3 settings in [opendxp/.env](file:///home/luis/swoofy/opendxp/.env) to prevent compilation failure during container image builds.
+  - Adjusted `bucket_private = "unimess"` and configured `path_prefix = "opendxp/production"` inside `openDXP/infra/production.tfvars` to cleanly separate assets in S3 without name collisions or invalid bucket paths.
+
+

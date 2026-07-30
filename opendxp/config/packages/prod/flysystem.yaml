@@ -20,7 +20,7 @@ flysystem:
             options:
                 client: 'app.s3_client'
                 bucket: '%env(S3_BUCKET_PUBLIC)%'
-                prefix: '%env(S3_ROOT_PREFIX)%public'
+                prefix: '%env(S3_PREFIX_ASSETS)%'
 
         opendxp.thumbnail.storage:
             adapter: aws
@@ -29,7 +29,7 @@ flysystem:
             options:
                 client: 'app.s3_client'
                 bucket: '%env(S3_BUCKET_PUBLIC)%'
-                prefix: '%env(S3_ROOT_PREFIX)%public'
+                prefix: '%env(S3_PREFIX_THUMBNAILS)%'
 
         opendxp.version.storage:
             adapter: aws
@@ -37,4 +37,4 @@ flysystem:
             options:
                 client: 'app.s3_client'
                 bucket: '%env(S3_BUCKET_PRIVATE)%'
-                prefix: '%env(S3_ROOT_PREFIX)%private'
+                prefix: '%env(S3_PREFIX_VERSIONS)%'

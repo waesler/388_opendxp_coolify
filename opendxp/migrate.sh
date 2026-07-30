@@ -79,7 +79,11 @@ for dir in "${CONFIG_DIRS[@]}"; do
     fi
 done
 
-echo "Success: Class configs copied. You can now run 'git status' and commit them."
+# Convert 'pimcore:' namespace keys to 'opendxp:' namespace keys in YAML files
+echo "Converting configuration namespaces from 'pimcore:' to 'opendxp:'..."
+find "$TARGET_OPENDXP_DIR/var/config" -type f \( -name "*.yaml" -o -name "*.yml" \) -exec sed -i 's/^pimcore:/opendxp:/g' {} +
+
+echo "Success: Class configs copied and namespaces converted. You can now run 'git status' and commit them."
 
 # ---------------------------------------------------------
 # Step 2: Migrate Database

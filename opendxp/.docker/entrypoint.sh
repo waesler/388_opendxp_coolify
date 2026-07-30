@@ -39,15 +39,7 @@ if [ -n "$DATABASE_URL" ]; then
         DB_PORT=${DB_PORT:-3306}
         
         # Check if the database has tables (meaning it's already installed)
-        TABLE_COUNT=$(php -r "
-            try {
-                \$pdo = new PDO('mysql:host=' . '$DB_HOST' . ';port=' . '$DB_PORT' . ';dbname=' . '$DB_NAME', '$DB_USER', '$DB_PASS');
-                \$stmt = \$pdo->query(\"SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = '\$DB_NAME'\");
-                echo (int) \$stmt->fetchColumn();
-            } catch (Exception \$e) {
-                echo 0;
-            }
-        ")
+        TABLE_COUNT=$(mysql -h "$DB_HOST" -P "$DB_PORT" -u "$DB_USER" -p"$DB_PASS" -D "$DB_NAME" -se "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema = '$DB_NAME';")
         
         if [ "${TABLE_COUNT:-0}" -eq 0 ]; then
             echo "Database is empty! Running OpenDXP core installation..."

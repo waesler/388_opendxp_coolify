@@ -82,6 +82,10 @@ if [ -n "$DATABASE_URL" ]; then
             php bin/console opendxp:bundle:install "$bundle" --no-interaction --no-assets-install || echo "Failed to install $bundle (might already be installed)"
         done
         
+        # Rebuild PHP classes from config/database
+        echo "Rebuilding PHP classes..."
+        php bin/console pimcore:deployment:classes-rebuild --force -n
+
         # Clear cache
         php bin/console cache:clear -n
     else

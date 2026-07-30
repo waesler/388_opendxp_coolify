@@ -15,7 +15,7 @@ COPY .docker/entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Install dependencies using Composer
-RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs
+RUN composer install --no-dev --optimize-autoloader --no-interaction --ignore-platform-reqs --no-scripts
 
 # Ensure permissions and directories are correct
 RUN mkdir -p var public/var && chown -R www-data:www-data var public/var && chmod -R 775 var public/var

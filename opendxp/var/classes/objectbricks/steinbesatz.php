@@ -7,7 +7,7 @@
  * - steinqualitaet [input]
  */
 
-return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
+return OpenDxp\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'dao' => NULL,
    'key' => 'steinbesatz',
    'parentClass' => '',
@@ -15,7 +15,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'title' => '',
    'group' => '',
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => NULL,
      'type' => NULL,
      'region' => NULL,
@@ -29,7 +29,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -43,7 +43,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'steingewicht',
              'title' => 'Steingewicht',
              'tooltip' => '',
@@ -80,7 +80,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'anzahlSteine',
              'title' => 'Anzahl Steine',
              'tooltip' => '',
@@ -110,7 +110,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'steinqualitaet',
              'title' => 'Steinqualität',
              'tooltip' => '',

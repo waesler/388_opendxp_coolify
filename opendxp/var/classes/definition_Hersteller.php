@@ -13,7 +13,7 @@
  * - kollektionen [reverseObjectRelation]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '2',
    'name' => 'Hersteller',
@@ -36,7 +36,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -50,7 +50,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -64,7 +64,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -78,7 +78,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'Daten',
                  'type' => NULL,
                  'region' => NULL,
@@ -92,7 +92,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Checkbox::__set_state(array(
                      'name' => 'freigegeben',
                      'title' => 'Freigegeben',
                      'tooltip' => '',
@@ -114,7 +114,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'name' => 'herstellerName',
                      'title' => 'Hersteller Name',
                      'tooltip' => '',
@@ -144,7 +144,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   2 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
                      'name' => 'beschreibung',
                      'title' => 'Beschreibung',
                      'tooltip' => '',
@@ -169,7 +169,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'width' => '',
                   )),
                   3 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'name' => 'logo',
                      'title' => 'Logo',
                      'tooltip' => '',
@@ -204,7 +204,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelAlign' => 'left',
               )),
               1 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'Layout',
                  'type' => NULL,
                  'region' => NULL,
@@ -218,7 +218,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
                      'name' => 'zugeordneteArtikel',
                      'title' => 'Zugeordnete Artikel',
                      'tooltip' => '',
@@ -258,7 +258,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'lazyLoading' => true,
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
                      'name' => 'kollektionen',
                      'title' => 'Kollektionen',
                      'tooltip' => '',

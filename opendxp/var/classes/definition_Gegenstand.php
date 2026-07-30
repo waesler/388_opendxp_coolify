@@ -12,7 +12,7 @@
  * - hauptkategorien [reverseObjectRelation]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '7',
    'name' => 'Gegenstand',
@@ -35,7 +35,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -49,7 +49,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -63,7 +63,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'bezeichnung',
              'title' => 'Bezeichnung',
              'tooltip' => '',
@@ -93,7 +93,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
              'name' => 'taxonomie',
              'title' => 'Taxonomie',
              'tooltip' => '',
@@ -133,7 +133,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
              'name' => 'image',
              'title' => 'Bild',
              'tooltip' => '',
@@ -156,7 +156,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
              'name' => 'beschreibung',
              'title' => 'Beschreibung',
              'tooltip' => '',
@@ -181,7 +181,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'width' => '',
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
              'name' => 'hauptkategorien',
              'title' => 'Hauptkategorien',
              'tooltip' => '',
@@ -280,7 +280,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'deletedDataComponents' => 
   array (
     0 => 
-    Pimcore\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
+    OpenDxp\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
        'name' => 'sortierung',
        'title' => 'Sortierung',
        'tooltip' => '',

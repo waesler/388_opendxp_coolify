@@ -10,7 +10,7 @@
  * - bezeichnung [input]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '3',
    'name' => 'Werte',
@@ -33,7 +33,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -47,7 +47,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -61,7 +61,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'bezeichnung',
              'title' => 'Bezeichnung',
              'tooltip' => '',

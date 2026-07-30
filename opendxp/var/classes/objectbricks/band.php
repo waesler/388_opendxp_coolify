@@ -13,7 +13,7 @@
  * - bandlaenge [quantityValue]
  */
 
-return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
+return OpenDxp\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'dao' => NULL,
    'key' => 'band',
    'parentClass' => '',
@@ -21,7 +21,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'title' => 'Armband',
    'group' => '',
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => NULL,
      'type' => NULL,
      'region' => NULL,
@@ -35,7 +35,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -49,7 +49,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'bandmaterial',
              'title' => 'Material',
              'tooltip' => '',
@@ -79,7 +79,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'bandanstoss',
              'title' => 'Bandanstoss',
              'tooltip' => '',
@@ -116,7 +116,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'schliesse',
              'title' => 'Schliesse',
              'tooltip' => '',
@@ -146,7 +146,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'schliessenmaterial',
              'title' => 'Schliessenmaterial',
              'tooltip' => '',
@@ -176,7 +176,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'schliessengroesse',
              'title' => 'Schliessengröße',
              'tooltip' => '',
@@ -213,7 +213,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           5 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'zwischenhoerner',
              'title' => 'Zwischenhörner',
              'tooltip' => '',
@@ -243,7 +243,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           6 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'bandart',
              'title' => 'Bandart',
              'tooltip' => '',
@@ -273,7 +273,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           7 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'bandfarbe',
              'title' => 'Bandfarbe',
              'tooltip' => '',
@@ -303,7 +303,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           8 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'bandlaenge',
              'title' => 'Bandlaenge',
              'tooltip' => '',

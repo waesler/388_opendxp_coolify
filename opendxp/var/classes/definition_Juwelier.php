@@ -12,7 +12,7 @@
  * - juwelierKey [encryptedField]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '8',
    'name' => 'Juwelier',
@@ -35,7 +35,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -49,7 +49,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -63,7 +63,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'juwelierName',
              'title' => 'Juwelier Name',
              'tooltip' => '',
@@ -93,7 +93,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
              'name' => 'juwelierMarken',
              'title' => 'Juwelier Marken',
              'tooltip' => '',
@@ -135,7 +135,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
              'name' => 'juwelierKollektionen',
              'title' => 'Juwelier Kollektionen',
              'tooltip' => '',
@@ -177,7 +177,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
              'name' => 'juwelierArtikel',
              'title' => 'Juwelier Artikel',
              'tooltip' => '',
@@ -219,7 +219,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\EncryptedField::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\EncryptedField::__set_state(array(
              'name' => 'juwelierKey',
              'title' => 'Juwelier Key',
              'tooltip' => '',
@@ -239,7 +239,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
             ),
              'delegateDatatype' => 'input',
              'delegate' => 
-            Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+            OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                'name' => 'juwelierKey',
                'title' => 'Juwelier Key',
                'tooltip' => '',

@@ -16,7 +16,7 @@
  * - artikel [reverseObjectRelation]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '5',
    'name' => 'Kollektion',
@@ -39,7 +39,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -53,7 +53,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -67,7 +67,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'kollektionsname',
              'title' => 'Kollektionsname',
              'tooltip' => '',
@@ -97,7 +97,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
              'name' => 'beschreibung',
              'title' => 'Beschreibung',
              'tooltip' => '',
@@ -122,7 +122,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'width' => '',
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
              'name' => 'hersteller',
              'title' => 'Hersteller',
              'tooltip' => '',
@@ -162,7 +162,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'Layout',
              'type' => NULL,
              'region' => NULL,
@@ -176,7 +176,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldcontainer::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldcontainer::__set_state(array(
                  'name' => 'Feldcontainer',
                  'type' => NULL,
                  'region' => NULL,
@@ -190,7 +190,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'name' => 'kollektionsHero',
                      'title' => 'Kollektions Hero',
                      'tooltip' => '',
@@ -213,7 +213,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'height' => '',
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'name' => 'kollektionsHeroMobil',
                      'title' => 'Kollektions Hero Mobil',
                      'tooltip' => '',
@@ -247,7 +247,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelAlign' => 'left',
               )),
               1 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldcontainer::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldcontainer::__set_state(array(
                  'name' => 'Feldcontainer',
                  'type' => NULL,
                  'region' => NULL,
@@ -261,7 +261,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'name' => 'markenbanner',
                      'title' => 'Markenbanner',
                      'tooltip' => '',
@@ -284,7 +284,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'height' => '',
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'name' => 'markenbannerMobil',
                      'title' => 'Markenbanner Mobil',
                      'tooltip' => '',
@@ -318,7 +318,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelAlign' => 'left',
               )),
               2 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\ImageGallery::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\ImageGallery::__set_state(array(
                  'name' => 'galerie',
                  'title' => 'Galerie',
                  'tooltip' => '',
@@ -356,7 +356,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelAlign' => 'left',
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
              'name' => 'artikel',
              'title' => 'Artikel',
              'tooltip' => '',

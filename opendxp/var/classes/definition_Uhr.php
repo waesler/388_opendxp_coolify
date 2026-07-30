@@ -37,7 +37,7 @@
  * - weitereBilder [imageGallery]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '4',
    'name' => 'Uhr',
@@ -60,7 +60,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -74,7 +74,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Tabpanel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -88,7 +88,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'Grunddaten',
              'type' => NULL,
              'region' => NULL,
@@ -102,7 +102,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'name',
                  'title' => 'Name',
                  'tooltip' => '',
@@ -132,7 +132,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               1 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
                  'name' => 'preis',
                  'title' => 'Preis',
                  'tooltip' => '',
@@ -169,7 +169,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'decimalPrecision' => NULL,
               )),
               2 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
                  'name' => 'kurzbeschreibung',
                  'title' => 'Kurzbeschreibung',
                  'tooltip' => '',
@@ -194,7 +194,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => 800,
               )),
               3 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Wysiwyg::__set_state(array(
                  'name' => 'beschreibung',
                  'title' => 'Beschreibung',
                  'tooltip' => '',
@@ -219,7 +219,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'width' => 800,
               )),
               4 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
                  'name' => 'hersteller',
                  'title' => 'Hersteller',
                  'tooltip' => '',
@@ -259,7 +259,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'height' => 100,
               )),
               5 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyObjectRelation::__set_state(array(
                  'name' => 'kollektion',
                  'title' => 'Kollektion',
                  'tooltip' => '',
@@ -299,7 +299,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'height' => '',
               )),
               6 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Select::__set_state(array(
                  'name' => 'geschlecht',
                  'title' => 'Geschlecht',
                  'tooltip' => '',
@@ -345,7 +345,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'optionsProviderData' => '',
               )),
               7 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldcontainer::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldcontainer::__set_state(array(
                  'name' => 'Artikelnummern',
                  'type' => NULL,
                  'region' => '',
@@ -359,7 +359,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Layout\Text::__set_state(array(
                      'name' => 'Layout',
                      'type' => NULL,
                      'region' => NULL,
@@ -384,7 +384,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'border' => false,
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'name' => 'Artikelnummer',
                      'title' => 'Artikelnummer',
                      'tooltip' => '',
@@ -414,7 +414,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   2 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'name' => 'ean',
                      'title' => 'EAN',
                      'tooltip' => '',
@@ -444,7 +444,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'defaultValueGenerator' => '',
                   )),
                   3 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                      'name' => 'sku',
                      'title' => 'SKU',
                      'tooltip' => '',
@@ -497,7 +497,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelAlign' => 'left',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'technische Daten',
              'type' => NULL,
              'region' => NULL,
@@ -511,7 +511,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'Layout',
                  'type' => NULL,
                  'region' => NULL,
@@ -525,7 +525,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Multiselect::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Multiselect::__set_state(array(
                      'name' => 'komplikationen',
                      'title' => '',
                      'tooltip' => '',
@@ -565,7 +565,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'labelAlign' => 'top',
               )),
               1 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
                  'name' => 'Layout',
                  'type' => NULL,
                  'region' => NULL,
@@ -579,7 +579,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
                      'name' => 'technischedaten',
                      'title' => 'Technische Daten',
                      'tooltip' => '',
@@ -605,7 +605,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'border' => false,
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
                      'name' => 'gehaeuse',
                      'title' => 'Gehäuse',
                      'tooltip' => '',
@@ -631,7 +631,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'border' => false,
                   )),
                   2 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
                      'name' => 'band',
                      'title' => 'Band',
                      'tooltip' => '',
@@ -657,7 +657,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'border' => false,
                   )),
                   3 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Objectbricks::__set_state(array(
                      'name' => 'steinbesatz',
                      'title' => 'Steinbesatz',
                      'tooltip' => '',
@@ -707,7 +707,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelAlign' => 'left',
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'Tudor',
              'type' => NULL,
              'region' => NULL,
@@ -721,7 +721,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_gehaeuse',
                  'title' => 'Gehaeuse',
                  'tooltip' => '',
@@ -751,7 +751,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               1 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_luenette',
                  'title' => 'Lünette',
                  'tooltip' => '',
@@ -781,7 +781,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               2 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_uhrwerk',
                  'title' => 'Uhrwerk',
                  'tooltip' => '',
@@ -811,7 +811,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               3 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_ziffernblatt',
                  'title' => 'Ziffernblatt',
                  'tooltip' => '',
@@ -841,7 +841,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               4 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_aufzugskrone',
                  'title' => 'Aufzugskrone',
                  'tooltip' => '',
@@ -871,7 +871,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               5 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_glas',
                  'title' => 'Glas',
                  'tooltip' => '',
@@ -901,7 +901,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               6 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_wasserdichtigkeit',
                  'title' => 'Wasserdichtigkeit',
                  'tooltip' => '',
@@ -931,7 +931,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               7 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_armband',
                  'title' => 'Armband',
                  'tooltip' => '',
@@ -961,7 +961,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               8 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_groesse',
                  'title' => 'Größe',
                  'tooltip' => '',
@@ -991,7 +991,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               9 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_material',
                  'title' => 'Material',
                  'tooltip' => '',
@@ -1021,7 +1021,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               10 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_filter_ziffernblatt',
                  'title' => 'Filter _Ziffernblatt',
                  'tooltip' => '',
@@ -1051,7 +1051,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               11 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
                  'name' => 'tudor_sorting',
                  'title' => 'Sortierung',
                  'tooltip' => '',
@@ -1081,7 +1081,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'defaultValueGenerator' => '',
               )),
               12 => 
-              Pimcore\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Data\Textarea::__set_state(array(
                  'name' => 'tudor_suggestions',
                  'title' => 'Suggestions',
                  'tooltip' => '',
@@ -1118,7 +1118,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'labelAlign' => 'left',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
              'name' => 'Bilder',
              'type' => NULL,
              'region' => NULL,
@@ -1132,7 +1132,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'children' => 
             array (
               0 => 
-              Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+              OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
                  'name' => 'Layout',
                  'type' => NULL,
                  'region' => NULL,
@@ -1146,7 +1146,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                  'children' => 
                 array (
                   0 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\Image::__set_state(array(
                      'name' => 'cover',
                      'title' => 'Cover',
                      'tooltip' => '',
@@ -1169,7 +1169,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
                      'height' => '',
                   )),
                   1 => 
-                  Pimcore\Model\DataObject\ClassDefinition\Data\ImageGallery::__set_state(array(
+                  OpenDxp\Model\DataObject\ClassDefinition\Data\ImageGallery::__set_state(array(
                      'name' => 'weitereBilder',
                      'title' => 'Weitere Bilder',
                      'tooltip' => '',

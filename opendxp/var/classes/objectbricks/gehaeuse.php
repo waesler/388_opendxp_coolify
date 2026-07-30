@@ -18,7 +18,7 @@
  * - gehaeuseboden [input]
  */
 
-return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
+return OpenDxp\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'dao' => NULL,
    'key' => 'gehaeuse',
    'parentClass' => '',
@@ -26,7 +26,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'title' => 'Gehäuse',
    'group' => '',
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => NULL,
      'type' => NULL,
      'region' => NULL,
@@ -40,7 +40,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -54,7 +54,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'gehaeusematerial',
              'title' => 'Material',
              'tooltip' => '',
@@ -84,7 +84,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'zifferblattfarbe',
              'title' => 'Zifferblattfarbe',
              'tooltip' => '',
@@ -114,7 +114,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'indizes',
              'title' => 'Indizes (Ziffern)',
              'tooltip' => '',
@@ -144,7 +144,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'uhrwerk',
              'title' => 'Uhrwerk',
              'tooltip' => '',
@@ -174,7 +174,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'gehaeuseform',
              'title' => 'Gehäuseform',
              'tooltip' => '',
@@ -204,7 +204,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           5 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'halbschwingung',
              'title' => 'Halbschwingung',
              'tooltip' => '',
@@ -234,7 +234,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           6 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\BooleanSelect::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\BooleanSelect::__set_state(array(
              'name' => 'sichtboden',
              'title' => 'Sichtboden',
              'tooltip' => '',
@@ -276,7 +276,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'width' => '',
           )),
           7 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'Glas',
              'title' => 'Glas',
              'tooltip' => '',
@@ -306,7 +306,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           8 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'Krone',
              'title' => 'Krone',
              'tooltip' => '',
@@ -336,7 +336,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           9 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'luenette',
              'title' => 'Lünette',
              'tooltip' => '',
@@ -366,7 +366,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           10 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'wasserdichtheit',
              'title' => 'Wasserdichtheit',
              'tooltip' => '',
@@ -403,7 +403,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           11 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'kaliber',
              'title' => 'Kaliber',
              'tooltip' => '',
@@ -433,7 +433,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           12 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'gangreserve',
              'title' => 'Gangreserve',
              'tooltip' => '',
@@ -463,7 +463,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           13 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'gehaeuseboden',
              'title' => 'Gehäuseboden',
              'tooltip' => '',

@@ -10,7 +10,7 @@
  * - erscheinungsjahr [input]
  */
 
-return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
+return OpenDxp\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'dao' => NULL,
    'key' => 'daten',
    'parentClass' => '',
@@ -18,7 +18,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
    'title' => '',
    'group' => '',
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => NULL,
      'type' => NULL,
      'region' => NULL,
@@ -32,7 +32,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Fieldset::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -46,7 +46,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'laenge',
              'title' => 'Länge',
              'tooltip' => '',
@@ -83,7 +83,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'breite',
              'title' => 'Breite',
              'tooltip' => '',
@@ -120,7 +120,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'hoehe',
              'title' => 'Höhe',
              'tooltip' => '',
@@ -157,7 +157,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'durchmesser',
              'title' => 'Durchmesser',
              'tooltip' => '',
@@ -194,7 +194,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           4 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\QuantityValue::__set_state(array(
              'name' => 'gewicht',
              'title' => 'Gewicht',
              'tooltip' => '',
@@ -231,7 +231,7 @@ return Pimcore\Model\DataObject\Objectbrick\Definition::__set_state(array(
              'decimalPrecision' => NULL,
           )),
           5 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'erscheinungsjahr',
              'title' => 'Erscheinungsjahr',
              'tooltip' => '',

@@ -12,7 +12,7 @@
  * - produkte_sorted [manyToManyRelation]
  */
 
-return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
+return OpenDxp\Model\DataObject\ClassDefinition::__set_state(array(
    'dao' => NULL,
    'id' => '6',
    'name' => 'Taxonomie',
@@ -35,7 +35,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
    'allowVariants' => false,
    'showVariants' => false,
    'layoutDefinitions' => 
-  Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+  OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
      'name' => 'pimcore_root',
      'type' => NULL,
      'region' => NULL,
@@ -49,7 +49,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
      'children' => 
     array (
       0 => 
-      Pimcore\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
+      OpenDxp\Model\DataObject\ClassDefinition\Layout\Panel::__set_state(array(
          'name' => 'Layout',
          'type' => NULL,
          'region' => NULL,
@@ -63,7 +63,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
          'children' => 
         array (
           0 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\Input::__set_state(array(
              'name' => 'bezeichnung',
              'title' => 'Bezeichnung',
              'tooltip' => '',
@@ -93,7 +93,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'defaultValueGenerator' => '',
           )),
           1 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ReverseObjectRelation::__set_state(array(
              'name' => 'produkte',
              'title' => 'Produkte',
              'tooltip' => '',
@@ -135,7 +135,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'lazyLoading' => true,
           )),
           2 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyRelation::__set_state(array(
              'name' => 'hauptkategorie',
              'title' => 'Hauptkategorie',
              'tooltip' => '',
@@ -188,7 +188,7 @@ return Pimcore\Model\DataObject\ClassDefinition::__set_state(array(
              'height' => '',
           )),
           3 => 
-          Pimcore\Model\DataObject\ClassDefinition\Data\ManyToManyRelation::__set_state(array(
+          OpenDxp\Model\DataObject\ClassDefinition\Data\ManyToManyRelation::__set_state(array(
              'name' => 'produkte_sorted',
              'title' => 'Produkte Sortiert',
              'tooltip' => '',

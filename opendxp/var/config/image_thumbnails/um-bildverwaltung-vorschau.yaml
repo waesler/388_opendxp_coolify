@@ -1,0 +1,28 @@
+pimcore:
+    assets:
+        image:
+            thumbnails:
+                definitions:
+                    um-bildverwaltung-vorschau:
+                        items:
+                            -
+                                method: cover
+                                arguments:
+                                    width: 600
+                                    height: 300
+                                    positioning: center
+                                    forceResize: true
+                        medias: {  }
+                        name: um-bildverwaltung-vorschau
+                        description: ''
+                        group: ''
+                        format: JPEG
+                        quality: 85
+                        highResolution: null
+                        preserveColor: false
+                        preserveMetaData: false
+                        rasterizeSVG: false
+                        downloadable: false
+                        modificationDate: 1712223420
+                        creationDate: 1707136224
+                        preserveAnimation: false

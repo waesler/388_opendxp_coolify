@@ -1,0 +1,28 @@
+pimcore:
+    assets:
+        image:
+            thumbnails:
+                definitions:
+                    1808-produkt-bild-desktop:
+                        items:
+                            -
+                                method: cover
+                                arguments:
+                                    width: 1200
+                                    height: 800
+                                    positioning: center
+                                    forceResize: true
+                        medias: {  }
+                        name: 1808-produkt-bild-desktop
+                        description: ''
+                        group: ''
+                        format: SOURCE
+                        quality: 85
+                        highResolution: null
+                        preserveColor: false
+                        preserveMetaData: false
+                        rasterizeSVG: false
+                        downloadable: false
+                        modificationDate: 1712551807
+                        creationDate: 1712551694
+                        preserveAnimation: false

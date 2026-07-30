@@ -1,0 +1,15 @@
+pimcore:
+    properties:
+        predefined:
+            definitions:
+                a88295bc-d4ea-4458-8a79-68defbc21b51:
+                    name: Test1
+                    description: ''
+                    key: new_key
+                    type: text
+                    data: ''
+                    config: ''
+                    ctype: document
+                    inheritable: false
+                    creationDate: 1763403832
+                    modificationDate: 1763403852

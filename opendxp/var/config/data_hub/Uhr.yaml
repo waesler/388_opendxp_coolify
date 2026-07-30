@@ -1,0 +1,991 @@
+pimcore_data_hub:
+    configurations:
+        Uhr:
+            general:
+                active: true
+                type: graphql
+                name: Uhr
+                description: ''
+                group: ''
+                sqlObjectCondition: ''
+                modificationDate: 1734620078
+                path: null
+                createDate: 1697637644
+            schema:
+                queryEntities:
+                    Uhr:
+                        id: Uhr
+                        name: Uhr
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: preis
+                                        label: Preis
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kurzbeschreibung
+                                        label: Kurzbeschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: beschreibung
+                                        label: Beschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: ean
+                                        label: EAN
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: sku
+                                        label: SKU
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: komplikationen
+                                        label: (komplikationen)
+                                        dataType: multiselect
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: cover
+                                        label: Cover
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: weitereBilder
+                                        label: 'Weitere Bilder'
+                                        dataType: imageGallery
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~material
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandanstoss
+                                        label: Bandanstoss
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~schliesse
+                                        label: Schliesse
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~schliessenmaterial
+                                        label: Schliessenmaterial
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~schliessengroesse
+                                        label: Schliessengröße
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~zwischenhoerner
+                                        label: Zwischenhörner
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~laenge
+                                        label: Länge
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~breite
+                                        label: Breite
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~hoehe
+                                        label: Höhe
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~durchmesser
+                                        label: Durchmesser
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~gewicht
+                                        label: Gewicht
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~erscheinungsjahr
+                                        label: Erscheinungsjahr
+                                        dataType: numeric
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~material
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~zifferblattfarbe
+                                        label: Zifferblattfarbe
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~indizes
+                                        label: 'Indizes (Ziffern)'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~uhrwerk
+                                        label: Uhrwerk
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gehaeuseform
+                                        label: Gehäuseform
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~halbschwingung
+                                        label: Halbschwingung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~sichtboden
+                                        label: Sichtboden
+                                        dataType: booleanSelect
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~Glas
+                                        label: Glas
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~Krone
+                                        label: Krone
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~luenette
+                                        label: Lünette
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~wasserdichtheit
+                                        label: Wasserdichtheit
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~kaliber
+                                        label: Kaliber
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gangreserve
+                                        label: Gangreserve
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: steinbesatz~steingewicht
+                                        label: Steingewicht
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: steinbesatz~steinqualitaet
+                                        label: Steinqualität
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: hersteller
+                                        label: Hersteller
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: geschlecht
+                                        label: Geschlecht
+                                        dataType: select
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandmaterial
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandart
+                                        label: Bandart
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandfarbe
+                                        label: Bandfarbe
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandlaenge
+                                        label: Bandlaenge
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gehaeusematerial
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gehaeuseboden
+                                        label: Gehäuseboden
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: steinbesatz~anzahlSteine
+                                        label: 'Anzahl Steine'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kollektion
+                                        label: Kollektion
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: key
+                                        label: Key
+                                        dataType: system
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: name
+                                        label: Name
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_luenette
+                                        label: Lünette
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_uhrwerk
+                                        label: Uhrwerk
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_ziffernblatt
+                                        label: Ziffernblatt
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_aufzugskrone
+                                        label: Aufzugskrone
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_glas
+                                        label: Glas
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_wasserdichtigkeit
+                                        label: Wasserdichtigkeit
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_armband
+                                        label: Armband
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_groesse
+                                        label: Größe
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_material
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_filter_ziffernblatt
+                                        label: 'Filter _Ziffernblatt'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_sorting
+                                        label: Sortierung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_suggestions
+                                        label: Suggestions
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_gehaeuse
+                                        label: Gehaeuse
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: Artikelnummer
+                                        label: Artikelnummer
+                                        dataType: input
+                                    isOperator: false
+                    Hersteller:
+                        id: Hersteller
+                        name: Hersteller
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: herstellerName
+                                        label: 'Hersteller Name'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: id
+                                        label: ID
+                                        dataType: system
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: zugeordneteArtikel
+                                        label: 'Zugeordnete Artikel'
+                                        dataType: reverseObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kollektionen
+                                        label: Kollektionen
+                                        dataType: reverseObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: beschreibung
+                                        label: Beschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: logo
+                                        label: Logo
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: freigegeben
+                                        label: Freigegeben
+                                        dataType: checkbox
+                                    isOperator: false
+                    Kollektion:
+                        id: Kollektion
+                        name: Kollektion
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: kollektionsname
+                                        label: Kollektionsname
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: id
+                                        label: ID
+                                        dataType: system
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kollektionsHero
+                                        label: 'Kollektions Hero'
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: beschreibung
+                                        label: Beschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kollektionsHeroMobil
+                                        label: 'Kollektions Hero Mobil'
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: hersteller
+                                        label: Hersteller
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: artikel
+                                        label: Artikel
+                                        dataType: reverseObjectRelation
+                                    isOperator: false
+                    Juwelier:
+                        id: Juwelier
+                        name: Juwelier
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: juwelierName
+                                        label: 'Juwelier Name'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: juwelierMarken
+                                        label: 'Juwelier Marken'
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: juwelierKollektionen
+                                        label: 'Juwelier Kollektionen'
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: juwelierArtikel
+                                        label: 'Juwelier Artikel'
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                mutationEntities:
+                    Uhr:
+                        id: Uhr
+                        name: Uhr
+                        update: true
+                        create: true
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: name
+                                        label: Name
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: preis
+                                        label: Preis
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: Artikelnummer
+                                        label: Artikelnummer
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: ean
+                                        label: EAN
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: sku
+                                        label: SKU
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: komplikationen
+                                        label: (komplikationen)
+                                        dataType: multiselect
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: weitereBilder
+                                        label: 'Weitere Bilder'
+                                        dataType: imageGallery
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~material
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandanstoss
+                                        label: Bandanstoss
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~schliesse
+                                        label: Schliesse
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~schliessenmaterial
+                                        label: Schliessenmaterial
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~schliessengroesse
+                                        label: Schliessengröße
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~zwischenhoerner
+                                        label: Zwischenhörner
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~laenge
+                                        label: Länge
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~breite
+                                        label: Breite
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~durchmesser
+                                        label: Durchmesser
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~gewicht
+                                        label: Gewicht
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~erscheinungsjahr
+                                        label: Erscheinungsjahr
+                                        dataType: numeric
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~material
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~zifferblattfarbe
+                                        label: Zifferblattfarbe
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~indizes
+                                        label: 'Indizes (Ziffern)'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~uhrwerk
+                                        label: Uhrwerk
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gehaeuseform
+                                        label: Gehäuseform
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~Glas
+                                        label: Glas
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~Krone
+                                        label: Krone
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~luenette
+                                        label: Lünette
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~wasserdichtheit
+                                        label: Wasserdichtheit
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~kaliber
+                                        label: Kaliber
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gangreserve
+                                        label: Gangreserve
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: steinbesatz~steingewicht
+                                        label: Steingewicht
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: steinbesatz~steinqualitaet
+                                        label: Steinqualität
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: cover
+                                        label: Cover
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gehaeuseboden
+                                        label: Gehäuseboden
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~sichtboden
+                                        label: Sichtboden
+                                        dataType: booleanSelect
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandmaterial
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~gehaeusematerial
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandart
+                                        label: Bandart
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandfarbe
+                                        label: Bandfarbe
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: band~bandlaenge
+                                        label: Bandlaenge
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: hersteller
+                                        label: Hersteller
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: steinbesatz~anzahlSteine
+                                        label: 'Anzahl Steine'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: gehaeuse~halbschwingung
+                                        label: Halbschwingung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kollektion
+                                        label: Kollektion
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: kurzbeschreibung
+                                        label: Kurzbeschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: beschreibung
+                                        label: Beschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: geschlecht
+                                        label: Geschlecht
+                                        dataType: select
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: daten~hoehe
+                                        label: Höhe
+                                        dataType: quantityValue
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_gehaeuse
+                                        label: Gehaeuse
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_luenette
+                                        label: Lünette
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_uhrwerk
+                                        label: Uhrwerk
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_aufzugskrone
+                                        label: Aufzugskrone
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_glas
+                                        label: Glas
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_wasserdichtigkeit
+                                        label: Wasserdichtigkeit
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_armband
+                                        label: Armband
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_groesse
+                                        label: Größe
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_filter_ziffernblatt
+                                        label: 'Filter _Ziffernblatt'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_sorting
+                                        label: Sortierung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_suggestions
+                                        label: Suggestions
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_ziffernblatt
+                                        label: Ziffernblatt
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: tudor_material
+                                        label: Material
+                                        dataType: input
+                                    isOperator: false
+                        delete: true
+                    Juwelier:
+                        id: Juwelier
+                        name: Juwelier
+                        update: true
+                        create: true
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: juwelierName
+                                        label: 'Juwelier Name'
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: juwelierMarken
+                                        label: 'Juwelier Marken'
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: juwelierKollektionen
+                                        label: 'Juwelier Kollektionen'
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: juwelierArtikel
+                                        label: 'Juwelier Artikel'
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                specialEntities:
+                    document:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    document_folder:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    asset:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_listing:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    object_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    translation:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    translation_listing:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+            security:
+                method: datahub_apikey
+                apikey:
+                    - 37445449fa5c03a549ac02e497f9a3b5
+                skipPermissionCheck: true
+                disableIntrospection: false
+            workspaces:
+                asset:
+                    -
+                        read: true
+                        cpath: /Uhren
+                        create: true
+                        update: true
+                        delete: false
+                        id: extModel3091-1
+                document: {  }
+                object:
+                    -
+                        read: true
+                        cpath: /
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel1275-1
+                    -
+                        read: true
+                        cpath: /Uhren
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel1275-2
+                    -
+                        read: true
+                        cpath: /Daten
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel1275-3
+            permissions:
+                user: {  }
+                role: {  }

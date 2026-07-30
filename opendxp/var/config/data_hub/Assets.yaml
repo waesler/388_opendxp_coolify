@@ -1,0 +1,76 @@
+pimcore_data_hub:
+    configurations:
+        Assets:
+            general:
+                active: true
+                type: graphql
+                name: Assets
+                description: ''
+                group: ''
+                sqlObjectCondition: ''
+                modificationDate: 1712911007
+                path: null
+                createDate: 1699887913
+            schema:
+                queryEntities: {  }
+                mutationEntities:
+                    Uhr:
+                        id: Uhr
+                        name: Uhr
+                        update: true
+                        create: true
+                        delete: true
+                specialEntities:
+                    document:
+                        read: true
+                        create: true
+                        update: true
+                        delete: false
+                    document_folder:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    asset:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_listing:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    object_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: false
+                    translation:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    translation_listing:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+            security:
+                method: datahub_apikey
+                apikey:
+                    - 1bc69aa367d1ea66674a941bf003662a
+                skipPermissionCheck: true
+                disableIntrospection: false
+            workspaces:
+                asset: {  }
+                document: {  }
+                object: {  }
+            permissions:
+                user: {  }
+                role: {  }

@@ -1,0 +1,115 @@
+pimcore_data_hub:
+    configurations:
+        NomosImport:
+            general:
+                active: true
+                type: dataImporterDataObject
+                name: NomosImport
+                description: ''
+                group: ''
+                path: null
+                modificationDate: 1699865391
+                createDate: 1699864000
+            loaderConfig:
+                type: upload
+                settings:
+                    uploadFilePath: NomosImport/upload.import
+            interpreterConfig:
+                type: xlsx
+                settings:
+                    skipFirstRow: true
+                    sheetName: 'Daten und Preise'
+            resolverConfig:
+                elementType: dataObject
+                dataObjectClassId: '4'
+                loadingStrategy:
+                    type: attribute
+                    settings:
+                        dataSourceIndex: '0'
+                        attributeName: sku
+                        language: ''
+                createLocationStrategy:
+                    type: staticPath
+                    settings:
+                        path: /Nomos/Uhren
+                locationUpdateStrategy:
+                    type: noChange
+                publishingStrategy:
+                    type: alwaysPublish
+            processingConfig:
+                executionType: parallel
+                idDataIndex: ''
+            mappingConfig:
+                -
+                    label: Referenz
+                    dataSourceIndex:
+                        - '0'
+                    transformationResultType: default
+                    dataTarget:
+                        type: direct
+                        settings:
+                            fieldName: sku
+                            language: ''
+                            writeIfTargetIsNotEmpty: true
+                            writeIfSourceIsEmpty: true
+                    transformationPipeline: {  }
+                -
+                    label: Bezeichnung
+                    dataSourceIndex:
+                        - '1'
+                    transformationResultType: default
+                    dataTarget:
+                        type: direct
+                        settings:
+                            fieldName: name
+                            language: ''
+                            writeIfTargetIsNotEmpty: true
+                            writeIfSourceIsEmpty: true
+                    transformationPipeline: {  }
+                -
+                    label: Modell-Familie
+                    dataSourceIndex:
+                        - '2'
+                    transformationResultType: default
+                    dataTarget:
+                        type: direct
+                        settings:
+                            fieldName: kollektion
+                            language: ''
+                            writeIfTargetIsNotEmpty: true
+                            writeIfSourceIsEmpty: true
+                    transformationPipeline: {  }
+                -
+                    label: Erscheinungsjahr
+                    dataSourceIndex:
+                        - '3'
+                    transformationResultType: default
+                    dataTarget:
+                        type: direct
+                        settings:
+                            fieldName: technischedaten.daten.erscheinungsjahr
+                            language: ''
+                            writeIfTargetIsNotEmpty: true
+                            writeIfSourceIsEmpty: true
+                    transformationPipeline: {  }
+                -
+                    label: Boden
+                    dataSourceIndex:
+                        - '5'
+                    transformationResultType: default
+                    dataTarget:
+                        type: direct
+                        settings:
+                            fieldName: gehaeuse.gehaeuse.gehaeuseboden
+                            language: ''
+                            writeIfTargetIsNotEmpty: true
+                            writeIfSourceIsEmpty: true
+                    transformationPipeline: {  }
+            executionConfig:
+                scheduleType: recurring
+                cronDefinition: ''
+                scheduledAt: ''
+            permissions:
+                user: {  }
+                role: {  }
+            workspaces: {  }

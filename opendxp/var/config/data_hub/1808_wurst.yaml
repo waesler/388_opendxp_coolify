@@ -1,0 +1,243 @@
+pimcore_data_hub:
+    configurations:
+        1808_wurst:
+            general:
+                active: true
+                type: graphql
+                name: 1808_wurst
+                description: ''
+                group: ''
+                sqlObjectCondition: ''
+                modificationDate: 1715611024
+                path: null
+                createDate: 1706107182
+            schema:
+                queryEntities:
+                    Taxonomie:
+                        id: Taxonomie
+                        name: Taxonomie
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: bezeichnung
+                                        label: Bezeichnung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: id
+                                        label: ID
+                                        dataType: system
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: hauptkategorie
+                                        label: Hauptkategorie
+                                        dataType: manyToManyRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: produkte
+                                        label: Produkte
+                                        dataType: reverseObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: produkte_sorted
+                                        label: 'Produkte Sortiert'
+                                        dataType: manyToManyRelation
+                                    isOperator: false
+                    Gegenstand:
+                        id: Gegenstand
+                        name: Gegenstand
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: bezeichnung
+                                        label: Bezeichnung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: beschreibung
+                                        label: Beschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: taxonomie
+                                        label: Taxonomie
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: image
+                                        label: Bild
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    isOperator: true
+                                    attributes:
+                                        label: webbild
+                                        type: operator
+                                        class: Thumbnail
+                                        thumbnailConfig: 1808-produkt-bild-desktop
+                                        children:
+                                            -
+                                                isOperator: false
+                                                attributes:
+                                                    label: Bild
+                                                    type: value
+                                                    class: DefaultValue
+                                                    attribute: image
+                                                    dataType: image
+                                                    children: {  }
+                                    key: '#662a3cff39e63'
+                                -
+                                    attributes:
+                                        attribute: hauptkategorien
+                                        label: Hauptkategorien
+                                        dataType: reverseObjectRelation
+                                    isOperator: false
+                mutationEntities:
+                    Gegenstand:
+                        id: Gegenstand
+                        name: Gegenstand
+                        update: true
+                        create: true
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: bezeichnung
+                                        label: Bezeichnung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: taxonomie
+                                        label: Taxonomie
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: image
+                                        label: Bild
+                                        dataType: image
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: beschreibung
+                                        label: Beschreibung
+                                        dataType: wysiwyg
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: hauptkategorien
+                                        label: Hauptkategorien
+                                        dataType: manyToManyObjectRelation
+                                    isOperator: false
+                        delete: true
+                    Taxonomie:
+                        id: Taxonomie
+                        name: Taxonomie
+                        update: true
+                        create: true
+                        columnConfig:
+                            columns:
+                                -
+                                    attributes:
+                                        attribute: bezeichnung
+                                        label: Bezeichnung
+                                        dataType: input
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: hauptkategorie
+                                        label: Hauptkategorie
+                                        dataType: manyToManyRelation
+                                    isOperator: false
+                                -
+                                    attributes:
+                                        attribute: produkte_sorted
+                                        label: 'Produkte Sortiert'
+                                        dataType: manyToManyRelation
+                                    isOperator: false
+                        delete: true
+                specialEntities:
+                    document:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    document_folder:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    asset:
+                        read: true
+                        create: true
+                        update: true
+                        delete: true
+                    asset_folder:
+                        read: true
+                        create: true
+                        update: true
+                        delete: false
+                    asset_listing:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    object_folder:
+                        read: true
+                        create: false
+                        update: false
+                        delete: false
+                    translation:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+                    translation_listing:
+                        read: false
+                        create: false
+                        update: false
+                        delete: false
+            security:
+                method: datahub_apikey
+                apikey:
+                    - 191a9e671f0b483e56e15cf3b1b446f2
+                skipPermissionCheck: false
+                disableIntrospection: false
+            workspaces:
+                asset:
+                    -
+                        read: true
+                        cpath: /1808_Wurst
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel2833-1
+                document: {  }
+                object:
+                    -
+                        read: true
+                        cpath: /1808_wurst
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel2469-1
+                    -
+                        read: true
+                        cpath: /1808_wurst/Taxonomie
+                        create: true
+                        update: true
+                        delete: true
+                        id: extModel1896-1
+            permissions:
+                user: {  }
+                role: {  }

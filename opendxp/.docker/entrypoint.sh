@@ -84,7 +84,7 @@ if [ -n "$DATABASE_URL" ]; then
         
         # Rebuild PHP classes from config/database
         echo "Rebuilding PHP classes..."
-        php bin/console pimcore:deployment:classes-rebuild --force -n
+        php bin/console opendxp:deployment:classes-rebuild --force -n
 
         # Clear cache
         php bin/console cache:clear -n

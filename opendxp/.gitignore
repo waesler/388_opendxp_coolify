@@ -55,3 +55,7 @@ composer.lock
 
 # Migration Env
 /migration.env
+
+# AWS CLI installer files
+/aws/
+/awscliv2.zip

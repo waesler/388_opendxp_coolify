@@ -57,6 +57,9 @@ production = {
     PHP_MAX_UPLOAD_SIZE      = "128m"
     PHP_MAX_EXECUTION_TIME   = "300"
     PHP_MEMORY_LIMIT         = "1024m"
+    S3_PREFIX_ASSETS         = "pimcore/assets"
+    S3_PREFIX_THUMBNAILS     = "opendxp/production/public"
+    S3_PREFIX_VERSIONS       = "opendxp/production/private"
   }
 
   # S3 object storage (credentials are in secrets.auto.tfvars). cdn_domain "" => public
@@ -64,11 +67,12 @@ production = {
   # Objects land under the auto "production/" in-bucket prefix (path_prefix defaults to
   # "<env>/"), so staging can share these same buckets. Set path_prefix = "" for root.
   s3 = {
-    bucket_private = "opendxp"
+    bucket_private = "unimess"
     bucket_public  = "unimess"
     region         = "nbg1"
     endpoint       = "https://nbg1.your-objectstorage.com"
     cdn_domain     = "https://nbg1.your-objectstorage.com/opendxp-public/production/public"
+    path_prefix    = "opendxp/production"
   }
 }
 

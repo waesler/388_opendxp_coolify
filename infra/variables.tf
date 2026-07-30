@@ -158,7 +158,10 @@ variable "static_env" {
     # REMOTE_ADDR / PRIVATE_SUBNETS *are* expanded by HttpFoundation, but we don't need them.)
     # 0.0.0.0/0 trusts any upstream — safe because the container's :8000 is only reachable via
     # Traefik on Coolify's internal docker network, never directly.
-    TRUSTED_PROXIES = "0.0.0.0/0"
+    TRUSTED_PROXIES      = "0.0.0.0/0"
+    S3_PREFIX_ASSETS     = "opendxp/production/public"
+    S3_PREFIX_THUMBNAILS = "opendxp/production/public"
+    S3_PREFIX_VERSIONS   = "opendxp/production/private"
   }
 }
 

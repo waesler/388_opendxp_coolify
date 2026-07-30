@@ -52,3 +52,6 @@ nbproject
 composer.local.json
 composer.lock
 .ddev
+
+# Migration Env
+/migration.env

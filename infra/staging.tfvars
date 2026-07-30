@@ -53,6 +53,9 @@ staging = {
     PHP_MAX_UPLOAD_SIZE      = "128m"
     PHP_MAX_EXECUTION_TIME   = "300"
     PHP_MEMORY_LIMIT         = "512m"
+    S3_PREFIX_ASSETS         = "opendxp/staging/public"
+    S3_PREFIX_THUMBNAILS     = "opendxp/staging/public"
+    S3_PREFIX_VERSIONS       = "opendxp/staging/private"
   }
 
   # S3 object storage (credentials are in secrets.auto.tfvars). Shares production's

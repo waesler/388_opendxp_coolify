@@ -1,16 +1,16 @@
 <?php
 
 /**
- * OpenDXP
+ * Pimcore
  *
- * This source file is licensed under the GNU General Public License version 3 (GPLv3).
- *
+ * This source file is available under two different licenses:
+ * - GNU General Public License version 3 (GPLv3)
+ * - Pimcore Enterprise License (PEL)
  * Full copyright and license information is available in
  * LICENSE.md which is distributed with this source code.
  *
- * @copyright  Copyright (c) Pimcore GmbH (https://pimcore.com)
- * @copyright  Modification Copyright (c) OpenDXP (https://www.opendxp.ch)
- * @license    https://www.gnu.org/licenses/gpl-3.0.html  GNU General Public License version 3 (GPLv3)
+ *  @copyright  Copyright (c) Pimcore GmbH (http://www.pimcore.org)
+ *  @license    http://www.pimcore.org/license     GPLv3 and PEL
  */
 
 namespace App\Controller;
@@ -22,7 +22,12 @@ use Symfony\Component\HttpFoundation\Response;
 
 class Web2printController extends FrontendController
 {
-    public function defaultAction(Request $request): Response
+    /**
+     * @param Request $request
+     *
+     * @return Response
+     */
+    public function defaultAction(Request $request)
     {
         $paramsBag = [
             'document' => $this->document
@@ -42,9 +47,13 @@ class Web2printController extends FrontendController
     }
 
     /**
+     * @param Request $request
+     *
+     * @return Response
+     *
      * @throws \Exception
      */
-    public function containerAction(Request $request): Response
+    public function containerAction(Request $request)
     {
         $paramsBag = [
             'document' => $this->document

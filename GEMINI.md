@@ -57,4 +57,9 @@
   - Appended default dummy values for `DATABASE_URL` and S3 settings in [opendxp/.env](file:///home/luis/swoofy/opendxp/.env) to prevent compilation failure during container image builds.
   - Adjusted `bucket_private = "unimess"` and configured `path_prefix = "opendxp/production"` inside `openDXP/infra/production.tfvars` to cleanly separate assets in S3 without name collisions or invalid bucket paths.
 
+### 9. Notification Database Error (isStudio & payload Columns)
+- **Problem**: Opening the admin panel threw an HTTP 500 error on `/admin/notification/find-last-unread` with a SQL error (`Unknown column 'isStudio' in 'WHERE'`).
+- **Solution**: The live remote database was missing the `payload` and `isStudio` columns in the `notifications` table which OpenDXP expects. Executed the schema migration query directly on the live database:
+  `ALTER TABLE notifications ADD COLUMN payload longtext DEFAULT NULL, ADD COLUMN isStudio tinyint(1) NOT NULL DEFAULT 0;`
+
 

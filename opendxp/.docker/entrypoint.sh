@@ -63,6 +63,10 @@ if [ -n "$DATABASE_URL" ]; then
                 --no-interaction" www-data
         else
             echo "Database is already initialized ($TABLE_COUNT tables found)."
+            echo "Applying schema patches for imported database dumps..."
+            su -s /bin/sh -c "php bin/console doctrine:query:sql \"ALTER TABLE users ADD COLUMN IF NOT EXISTS isStudio tinyint(1) NOT NULL DEFAULT 0;\"" www-data || true
+            su -s /bin/sh -c "php bin/console doctrine:query:sql \"ALTER TABLE classes ADD COLUMN IF NOT EXISTS definitionModificationDate bigint(20) DEFAULT NULL;\"" www-data || true
+            su -s /bin/sh -c "php bin/console doctrine:query:sql \"ALTER TABLE notifications ADD COLUMN IF NOT EXISTS payload longtext DEFAULT NULL, ADD COLUMN IF NOT EXISTS isStudio tinyint(1) NOT NULL DEFAULT 0;\"" www-data || true
         fi
         
         echo "Ensuring bundles are installed..."

@@ -236,29 +236,22 @@ Bootstrap complete.
 One-time manual steps (not expressible via the Coolify API) — run on each
 Coolify HOST as root:
 
- 1. Log dirs — the container user (UID 82) must be able to write
+ 1. Log dirs — the container user (www-data / UID 33) must be able to write
     (once per environment: production, staging):
-      mkdir -p /data/opendxp/<env>/var/log && chown -R 82:82 /data/opendxp/<env>/var/log
+      mkdir -p /data/opendxp/<env>/var/log && chown -R 33:33 /data/opendxp/<env>/var/log
 
  2. Staging basic-auth — create the .htpasswd (the hash never enters repo/image):
       mkdir -p /data/opendxp/staging/auth
       htpasswd -nbB <user> '<password>' > /data/opendxp/staging/auth/.htpasswd
-      chown -R 82:82 /data/opendxp/staging/auth
+      chown -R 33:33 /data/opendxp/staging/auth
 
  3. DB/Redis tuning — set my.cnf / redis.conf in the Coolify UI (Coolify rejects
     the provider's update; intended values live in the mariadb_conf/redis_conf
     tfvars).
 
  4. Elasticsearch (after the first successful deploy, per env with ES enabled):
-      bin/console es:index && bin/console es:admin:index
+      bin/console opendxp:search-backend-reindex
     then redeploy the workers so they pick up the ES env.
-
- 5. First-deploy quirk: if the storefront loads unstyled right after the very
-    FIRST deploy (403 on theme/<hash>/css/all.css), a page was cached
-    mid-install pointing at a theme path that never got files. It self-heals
-    once the cache-invalidation scheduled task runs (workers up, <= 5 min) —
-    or fix immediately in the web container:
-      bin/console theme:compile --active-only
 
 --------------------------------------------------------------------------------
 From now on the COOLIFY UI is the single source of truth for this environment.

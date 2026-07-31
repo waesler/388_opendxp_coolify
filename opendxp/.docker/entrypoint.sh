@@ -86,6 +86,10 @@ if [ -n "$DATABASE_URL" ]; then
         echo "Rebuilding PHP classes..."
         su -s /bin/sh -c "php bin/console opendxp:deployment:classes-rebuild --force -n" www-data
 
+        # Install bundle assets into the public directory
+        echo "Installing assets..."
+        su -s /bin/sh -c "php bin/console assets:install public --symlink --relative" www-data
+
         # Clear cache
         su -s /bin/sh -c "php bin/console cache:clear -n" www-data
     else

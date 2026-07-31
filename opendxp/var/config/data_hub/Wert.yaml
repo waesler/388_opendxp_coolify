@@ -1,4 +1,4 @@
-pimcore_data_hub:
+opendxp_data_hub:
     configurations:
         Wert:
             general:

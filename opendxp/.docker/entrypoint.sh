@@ -77,7 +77,8 @@ if [ -n "$DATABASE_URL" ]; then
                       OpenDxpUuidBundle \
                       OpenDxpWordExportBundle \
                       OpenDxpXliffBundle \
-                      OpenDxpGenericExecutionEngineBundle; do
+                      OpenDxpGenericExecutionEngineBundle \
+                      OpenDxpDataHubBundle; do
             echo "Installing $bundle..."
             su -s /bin/sh -c "php bin/console opendxp:bundle:install \"$bundle\" --no-interaction --no-assets-install" www-data || echo "Failed to install $bundle (might already be installed)"
         done

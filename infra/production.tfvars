@@ -57,7 +57,7 @@ production = {
     PHP_MAX_UPLOAD_SIZE      = "128m"
     PHP_MAX_EXECUTION_TIME   = "300"
     PHP_MEMORY_LIMIT         = "1024m"
-    S3_PREFIX_ASSETS         = "pimcore/assets"
+    S3_PREFIX_ASSETS         = "opendxp/production/public"
     S3_PREFIX_THUMBNAILS     = "opendxp/production/public"
     S3_PREFIX_VERSIONS       = "opendxp/production/private"
   }
@@ -71,7 +71,7 @@ production = {
     bucket_public  = "unimess"
     region         = "nbg1"
     endpoint       = "https://nbg1.your-objectstorage.com"
-    cdn_domain     = "https://nbg1.your-objectstorage.com/opendxp-public/production/public"
+    cdn_domain     = "https://nbg1.your-objectstorage.com/unimess/opendxp/production/public"
     path_prefix    = "opendxp/production"
   }
 }

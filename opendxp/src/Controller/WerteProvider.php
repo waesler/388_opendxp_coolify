@@ -6,10 +6,10 @@ use \OpenDxp\Model\DataObject;
 use OpenDxp\Model\DataObject\Werte;
 use OpenDxp\Model\DataObject\Werte\Listing;
 use OpenDxp\Model\DataObject\ClassDefinition\Data;
-use OpenDxp\Model\DataObject\ClassDefinition\DynamicOptionsProvider\MultiSelectOptionsProviderInterface;
+use OpenDxp\Model\DataObject\ClassDefinition\DynamicOptionsProvider\SelectOptionsProviderInterface;
 
 
-class WerteProvider implements MultiSelectOptionsProviderInterface
+class WerteProvider implements SelectOptionsProviderInterface
 {
     public function getOptions(array $context, Data $fieldDefinition): array
     {

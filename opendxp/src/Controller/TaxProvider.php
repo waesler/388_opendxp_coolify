@@ -6,10 +6,10 @@ use \OpenDxp\Model\DataObject;
 use OpenDxp\Model\DataObject\Taxonomie;
 use OpenDxp\Model\DataObject\Taxonomie\Listing;
 use OpenDxp\Model\DataObject\ClassDefinition\Data;
-use OpenDxp\Model\DataObject\ClassDefinition\DynamicOptionsProvider\MultiSelectOptionsProviderInterface;
+use OpenDxp\Model\DataObject\ClassDefinition\DynamicOptionsProvider\SelectOptionsProviderInterface;
 
 
-class TaxProvider implements MultiSelectOptionsProviderInterface
+class TaxProvider implements SelectOptionsProviderInterface
 {
     public function getOptions(array $context, Data $fieldDefinition): array
     {

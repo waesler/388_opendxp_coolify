@@ -51,16 +51,16 @@ if [ -n "$DATABASE_URL" ]; then
         
         if [ "${TABLE_COUNT:-0}" -eq 0 ]; then
             echo "Database is empty! Running OpenDXP core installation..."
-            vendor/bin/opendxp-install \
+            su -s /bin/sh -c "vendor/bin/opendxp-install \
                 --admin-username=admin \
                 --admin-password=admin \
-                --mysql-host-socket="$DB_HOST" \
-                --mysql-username="$DB_USER" \
-                --mysql-password="$DB_PASS" \
-                --mysql-database="$DB_NAME" \
-                --mysql-port="$DB_PORT" \
+                --mysql-host-socket=\"$DB_HOST\" \
+                --mysql-username=\"$DB_USER\" \
+                --mysql-password=\"$DB_PASS\" \
+                --mysql-database=\"$DB_NAME\" \
+                --mysql-port=\"$DB_PORT\" \
                 --skip-database-config \
-                --no-interaction
+                --no-interaction" www-data
         else
             echo "Database is already initialized ($TABLE_COUNT tables found)."
         fi
@@ -79,15 +79,15 @@ if [ -n "$DATABASE_URL" ]; then
                       OpenDxpXliffBundle \
                       OpenDxpGenericExecutionEngineBundle; do
             echo "Installing $bundle..."
-            php bin/console opendxp:bundle:install "$bundle" --no-interaction --no-assets-install || echo "Failed to install $bundle (might already be installed)"
+            su -s /bin/sh -c "php bin/console opendxp:bundle:install \"$bundle\" --no-interaction --no-assets-install" www-data || echo "Failed to install $bundle (might already be installed)"
         done
         
         # Rebuild PHP classes from config/database
         echo "Rebuilding PHP classes..."
-        php bin/console opendxp:deployment:classes-rebuild --force -n
+        su -s /bin/sh -c "php bin/console opendxp:deployment:classes-rebuild --force -n" www-data
 
         # Clear cache
-        php bin/console cache:clear -n
+        su -s /bin/sh -c "php bin/console cache:clear -n" www-data
     else
         echo "Database is not reachable. Skipping bundle installation."
     fi

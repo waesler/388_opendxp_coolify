@@ -41,7 +41,7 @@
 - **Docker Startup Automation**: Created a custom startup script `.docker/entrypoint.sh` and set it as the Docker `ENTRYPOINT`. On container boot, it automatically:
   1. Checks database connectivity.
   2. Installs all required OpenDXP bundles (`OpenDxpSeoBundle`, `OpenDxpGlossaryBundle`, etc.) to build their database tables automatically.
-  3. Recursively sets `www-data` ownership and correct permissions (`775`) on `var/` and `public/var/` to eliminate runtime 500 file-access errors.
+  3. Recursively sets `www-data` ownership and correct permissions (`775`) on `var/` and `public/var/`.
   4. Runs `cache:clear`.
   5. Boots `supervisord` to serve the application.
 
@@ -57,9 +57,23 @@
   - Appended default dummy values for `DATABASE_URL` and S3 settings in [opendxp/.env](file:///home/luis/swoofy/opendxp/.env) to prevent compilation failure during container image builds.
   - Adjusted `bucket_private = "unimess"` and configured `path_prefix = "opendxp/production"` inside `openDXP/infra/production.tfvars` to cleanly separate assets in S3 without name collisions or invalid bucket paths.
 
-### 9. Notification Database Error (isStudio & payload Columns)
-- **Problem**: Opening the admin panel threw an HTTP 500 error on `/admin/notification/find-last-unread` with a SQL error (`Unknown column 'isStudio' in 'WHERE'`).
-- **Solution**: The live remote database was missing the `payload` and `isStudio` columns in the `notifications` table which OpenDXP expects. Executed the schema migration query directly on the live database:
-  `ALTER TABLE notifications ADD COLUMN payload longtext DEFAULT NULL, ADD COLUMN isStudio tinyint(1) NOT NULL DEFAULT 0;`
+### 9. Automated Database Schema Patching
+- **Problem**: Older database dumps imported onto a clean-slate server lacked required schema columns (`isStudio`/`payload` on `notifications`, `isStudio` on `users`, `definitionModificationDate` on `classes`), causing recurrent HTTP 500 errors on backend load.
+- **Solution**: Added SQL schema patches using `doctrine:query:sql "ALTER TABLE ... ADD COLUMN IF NOT EXISTS"` inside `entrypoint.sh` to automatically inject missing columns on container startup.
 
+### 10. DataHub Bundle Installation
+- **Problem**: The OpenDXP DataHub bundle was missing.
+- **Solution**: 
+  - Installed `open-dxp/data-hub-bundle` via Composer.
+  - Registered it in `config/bundles.php` and automated its registration in `entrypoint.sh`.
+  - Migrated configuration files inside `var/config/data_hub/*.yaml` from the obsolete `pimcore_data_hub:` key to the new `opendxp_data_hub:` namespace.
 
+### 11. S3 Paths & Assets Loading Correction
+- **Problem**: Media assets in the S3 bucket returned 404/500 errors.
+- **Solution**: Identified that assets in the S3 bucket are located under `unimess/pimcore/assets/`. Corrected `S3_PREFIX_ASSETS`, `S3_PREFIX_THUMBNAILS`, and `cdn_domain` in `production.tfvars` to point to the actual unimess paths.
+
+### 12. Bootstrap Command & Health Check Corrections
+- **Problem**: Hardcoded HTTP health checks on the web container caused issues, and the bootstrap checklist referenced Shopware commands and incorrect Alpine UIDs (`82:82`).
+- **Solution**: 
+  - Disabled the health check by setting `health_check_enabled = false` inside `.terraform/` module files.
+  - Updated `coolify-bootstrap` script output to use UID `33:33` (Debian/Ubuntu `www-data` standard) and corrected commands to use OpenDXP indexing (`opendxp:search-backend-reindex`) and removed Shopware theme compilers.

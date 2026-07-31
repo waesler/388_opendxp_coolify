@@ -38,9 +38,13 @@ All console commands inside the entrypoint are configured to run under `su -s /b
 
 ### Post-Deployment Commands
 If you use a **Post Deployment Command** inside the Coolify Web UI, make sure it either:
-* **Runs as `www-data`** using:
-  `su -s /bin/sh -c "bin/console cache:clear -n" www-data`
 * **Or is removed entirely**, as the entrypoint script already handles cache warming and clears it cleanly with correct permissions on every startup. Running it as `root` (the default) will lock the cache files again.
+
+### Disabling Health Check (Coolify Web)
+The upstream `terraform-coolify-shopware-stack` module has the web container's HTTP health check hardcoded to `true`. To disable the health check, you must manually edit the downloaded module code inside the `.terraform/` folder before running the bootstrap command:
+1. In `infra/.terraform/modules/production/apps.tf` and `infra/.terraform/modules/staging/apps.tf` (if staging is enabled), find `health_check_enabled = true` (around line 27).
+2. Change it to: `health_check_enabled = false`.
+3. Run `ddev coolify-bootstrap up` to apply the changes.
 
 ---
 

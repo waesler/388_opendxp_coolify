@@ -23,13 +23,9 @@ flysystem:
                 prefix: '%env(S3_PREFIX_ASSETS)%'
 
         opendxp.thumbnail.storage:
-            adapter: aws
-            visibility: public
-            public_url: '%env(S3_CDN_DOMAIN)%'
+            adapter: local
             options:
-                client: 'app.s3_client'
-                bucket: '%env(S3_BUCKET_PUBLIC)%'
-                prefix: '%env(S3_PREFIX_THUMBNAILS)%'
+                directory: '%kernel.project_dir%/public/var/tmp'
 
         opendxp.version.storage:
             adapter: aws

@@ -5,244 +5,169 @@
 
 http:
   routers:
-    opendxp-elasticsearch-9200-http:
-      entrypoints:
-        - http-9200
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-elasticsearch-9200"
-      tls: false
-      # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-rabbitmq-15672-http:
-      entrypoints:
-        - http-15672
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-rabbitmq-15672"
-      tls: false
-      # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-redis-commander-1358-http:
+    swoofy-redis-commander-1358-http:
       entrypoints:
         - http-1358
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-redis-commander-1358"
+      service: "swoofy-redis-commander-1358"
       tls: false
       # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-web-80-http:
+      #   - "swoofy-redirectHttps"
+    swoofy-web-80-http:
       entrypoints:
         - http-80
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-web-80"
+      service: "swoofy-web-80"
       tls: false
       # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-web-8025-http:
+      #   - "swoofy-redirectHttps"
+    swoofy-web-8025-http:
       entrypoints:
         - http-8025
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-web-8025"
+      service: "swoofy-web-8025"
       tls: false
       # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-web-9997-http:
-      entrypoints:
-        - http-8887
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-web-9997"
-      tls: false
-      # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-web-9998-http:
-      entrypoints:
-        - http-8888
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-web-9998"
-      tls: false
-      # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-web-9999-http:
-      entrypoints:
-        - http-8889
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-web-9999"
-      tls: false
-      # middlewares:
-      #   - "opendxp-redirectHttps"
-    opendxp-xhgui-80-http:
+      #   - "swoofy-redirectHttps"
+    swoofy-xhgui-80-http:
       entrypoints:
         - http-8143
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-xhgui-80"
+      service: "swoofy-xhgui-80"
       tls: false
       # middlewares:
-      #   - "opendxp-redirectHttps"
-    
-    
-    opendxp-elasticsearch-9200-https:
+      #   - "swoofy-redirectHttps"
+    swoofy-elasticsearch-9200-http:
       entrypoints:
-        - http-9201
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+        - http-9200
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-elasticsearch-9200"
-      
-      tls: true
-      
-    
-    opendxp-rabbitmq-15672-https:
+      service: "swoofy-elasticsearch-9200"
+      tls: false
+      # middlewares:
+      #   - "swoofy-redirectHttps"
+    swoofy-rabbitmq-15672-http:
       entrypoints:
-        - http-15673
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+        - http-15672
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-rabbitmq-15672"
-      
-      tls: true
-      
+      service: "swoofy-rabbitmq-15672"
+      tls: false
+      # middlewares:
+      #   - "swoofy-redirectHttps"
     
-    opendxp-redis-commander-1358-https:
+    
+    swoofy-redis-commander-1358-https:
       entrypoints:
         - http-1359
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-redis-commander-1358"
+      service: "swoofy-redis-commander-1358"
       
       tls: true
       
     
     
-    
-    
-    
-    opendxp-web-80-https:
+    swoofy-web-80-https:
       entrypoints:
         - http-443
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-web-80"
+      service: "swoofy-web-80"
       
       tls: true
       
-    opendxp-web-8025-https:
+    swoofy-web-8025-https:
       entrypoints:
         - http-8026
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-web-8025"
-      
-      tls: true
-      
-    opendxp-web-9997-https:
-      entrypoints:
-        - http-9997
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-web-9997"
-      
-      tls: true
-      
-    opendxp-web-9998-https:
-      entrypoints:
-        - http-9998
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-web-9998"
-      
-      tls: true
-      
-    opendxp-web-9999-https:
-      entrypoints:
-        - http-9999
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
-      
-      service: "opendxp-web-9999"
+      service: "swoofy-web-8025"
       
       tls: true
       
     
-    opendxp-xhgui-80-https:
+    swoofy-xhgui-80-https:
       entrypoints:
         - http-8142
-      rule: HostRegexp(`^opendxp\.ddev\.site$`)
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
       
-      service: "opendxp-xhgui-80"
+      service: "swoofy-xhgui-80"
+      
+      tls: true
+      
+    
+    swoofy-elasticsearch-9200-https:
+      entrypoints:
+        - http-9201
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
+      
+      service: "swoofy-elasticsearch-9200"
+      
+      tls: true
+      
+    
+    swoofy-rabbitmq-15672-https:
+      entrypoints:
+        - http-15673
+      rule: HostRegexp(`^swoofy\.ddev\.site$`)
+      
+      service: "swoofy-rabbitmq-15672"
       
       tls: true
       
     
 
   middlewares:
-    opendxp-redirectHttps:
+    swoofy-redirectHttps:
       redirectScheme:
         scheme: https
         permanent: true
 
   services:
-    opendxp-elasticsearch-9200:
+    swoofy-redis-commander-1358:
       loadbalancer:
         servers:
-          - url: http://ddev-opendxp-elasticsearch:9200
+          - url: http://ddev-swoofy-redis-commander:1358
         
     
-    opendxp-rabbitmq-15672:
+    swoofy-web-80:
       loadbalancer:
         servers:
-          - url: http://ddev-opendxp-rabbitmq:15672
+          - url: http://ddev-swoofy-web:80
         
-    
-    opendxp-redis-commander-1358:
+    swoofy-web-8025:
       loadbalancer:
         servers:
-          - url: http://ddev-opendxp-redis-commander:1358
-        
-    
-    opendxp-web-80:
-      loadbalancer:
-        servers:
-          - url: http://ddev-opendxp-web:80
-        
-    opendxp-web-8025:
-      loadbalancer:
-        servers:
-          - url: http://ddev-opendxp-web:8025
-        
-    opendxp-web-9997:
-      loadbalancer:
-        servers:
-          - url: http://ddev-opendxp-web:9997
-        
-    opendxp-web-9998:
-      loadbalancer:
-        servers:
-          - url: http://ddev-opendxp-web:9998
-        
-    opendxp-web-9999:
-      loadbalancer:
-        servers:
-          - url: http://ddev-opendxp-web:9999
+          - url: http://ddev-swoofy-web:8025
         
     
     
-    
-    
-    
-    opendxp-xhgui-80:
+    swoofy-xhgui-80:
       loadbalancer:
         servers:
-          - url: http://ddev-opendxp-xhgui:80
+          - url: http://ddev-swoofy-xhgui:80
+        
+    
+    swoofy-elasticsearch-9200:
+      loadbalancer:
+        servers:
+          - url: http://ddev-swoofy-elasticsearch:9200
+        
+    
+    swoofy-rabbitmq-15672:
+      loadbalancer:
+        servers:
+          - url: http://ddev-swoofy-rabbitmq:15672
         
     
     
 
 tls:
   certificates:
-    - certFile: /mnt/ddev-global-cache/traefik/certs/opendxp.crt
-      keyFile: /mnt/ddev-global-cache/traefik/certs/opendxp.key
+    - certFile: /mnt/ddev-global-cache/traefik/certs/swoofy.crt
+      keyFile: /mnt/ddev-global-cache/traefik/certs/swoofy.key

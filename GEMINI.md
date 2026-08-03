@@ -77,3 +77,9 @@
 - **Solution**: 
   - Disabled the health check by setting `health_check_enabled = false` inside `.terraform/` module files.
   - Updated `coolify-bootstrap` script output to use UID `33:33` (Debian/Ubuntu `www-data` standard) and corrected commands to use OpenDXP indexing (`opendxp:search-backend-reindex`) and removed Shopware theme compilers.
+
+### 13. Local Thumbnail Storage Migration
+- **Problem**: Latency in dynamic thumbnail generation and S3 API calls slowed down image delivery.
+- **Solution**:
+  - Modified [opendxp/config/packages/prod/flysystem.yaml](file:///home/luis/swoofy/opendxp/config/packages/prod/flysystem.yaml) to change the storage adapter for `opendxp.thumbnail.storage` from `aws` to `local` pointing to `%kernel.project_dir%/public/var/tmp`.
+  - Documented the requirement to map a Coolify persistent storage volume to `/var/www/html/public/var/tmp` to ensure persistence across container redeploys.

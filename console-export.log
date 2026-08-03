@@ -1,168 +1,25 @@
-admin/:95  GET http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/js/routing?callback=fos.Router.setData net::ERR_ABORTED 500 (Internal Server Error)
-ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1878 [W] [Ext.define] Duplicate class name 'Ext.grid.filters.filter.Number' specified, must be a non-empty string
-log @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1878
-logx @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1884
-Ext.apply.log.log.warn @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1885
-create @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2135
-define @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2181
-(anonymous) @ script-proxy?storageFile=minified_javascript_core_4618d127f05e0e877c7b880349455cfd.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:9266
-router.js:133 Uncaught Error: The route "opendxp_admin_gdpr_dataobject_searchdataobjects" does not exist.
-    at Router.getRoute (router.js:133:15)
-    at Router.generate (router.js:139:27)
-    at script-proxy?storageFile=minified_javascript_core_4618d127f05e0e877c7b880349455cfd.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:22027:24
-Router.getRoute @ router.js:133
-Router.generate @ router.js:139
-(anonymous) @ script-proxy?storageFile=minified_javascript_core_4618d127f05e0e877c7b880349455cfd.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:22027
-class.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:48 Cannot create class with null properties! A possible case for this error is using the class opendxp.plugin.admin
-create @ class.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:48
-(anonymous) @ script-proxy?storageFile=minified_javascript_core_0b4ad2a3b80d7be066f14ac43ad44969.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:483
-script-proxy?storageFile=minified_javascript_core_0b4ad2a3b80d7be066f14ac43ad44969.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:6989 Uncaught TypeError: Cannot read properties of undefined (reading 'helpers')
-    at script-proxy?storageFile=minified_javascript_core_0b4ad2a3b80d7be066f14ac43ad44969.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:6989:74
-(anonymous) @ script-proxy?storageFile=minified_javascript_core_0b4ad2a3b80d7be066f14ac43ad44969.js&_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:6989
-startup.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:62 Uncaught TypeError: Cannot read properties of undefined (reading 'initOverrides')
-    at startup.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:62:33
-    at Object.invoke (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2291:939)
-    at Object.doInvokeAll (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2294:4)
-    at Object.invokeAll (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2291:1061)
-    at Object.unblock (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2298:213)
-    at Object.triggerReady (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2331:7)
-    at Object.checkReady (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2334:311)
-    at Object.load (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2321:8)
-    at Object.require (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2315:68)
-    at Object.triggerReady (ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2330:138)
-(anonymous) @ startup.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:62
-invoke @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2291
-doInvokeAll @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2294
-invokeAll @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2291
-unblock @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2298
-triggerReady @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2331
-checkReady @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2334
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2321
-require @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2315
-triggerReady @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2330
-checkReady @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2334
-onLoadSuccess @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2328
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1000
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-requestComplete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:652
-notify @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1004
-processLoadedEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:982
-notifyRequests @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1382
-complete @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1249
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1252
-el.onload @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1170
-script
-getElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1102
-createLoadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1150
-loadElement @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1251
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1302
-loadEntries @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:948
-processRequest @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:603
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:622
-loadScripts @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2333
-load @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2320
-require @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:2315
-(anonymous) @ ext-all.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:1736
-(anonymous) @ startup.js?_dc=dc0250544b18af72601fb4c1ef787e5c381046f0:45
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxpadmin/css/login.css
+[HTTP/1.1 404 Not Found 17ms]
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxpglossary/css/icons.css?_dc=1785485214
+[HTTP/1.1 404 Not Found 40ms]
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxpseo/css/icons.css?_dc=1785485214
+[HTTP/1.1 404 Not Found 42ms]
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxptinymce/css/editor.css?_dc=1785485214
+[HTTP/1.1 404 Not Found 68ms]
+Password fields present on an insecure (http://) page. This is a security risk that allows user login credentials to be stolen. login
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxpwordexport/css/icons.css?_dc=1785485214
+[HTTP/1.1 404 Not Found 35ms]
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/admin/settings/display-custom-logo?white=true
+[HTTP/1.1 500 Internal Server Error 78ms]
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxpadmin/img/login/login-background.png
+[HTTP/1.1 404 Not Found 17ms]
+GET
+http://z8k8zf22wxbj42xdpjs3jirw.128.140.126.141.sslip.io/bundles/opendxpadmin/img/favicon/favicon-32x32.png
+[HTTP/1.1 404 Not Found 16ms]
